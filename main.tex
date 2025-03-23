@@ -1,0 +1,157 @@
+\usepackage{xcolor}
+\input{setup/preamble.tex}
+\input{setup/macros.tex}
+
+% Custom Command for Green Highlighted Text
+\newcommand{\highlight}[1]{%
+    \colorbox{green!50}{\textbf{#1}}%
+}
+
+\begin{document}
+    %%% Title %%%
+    \tcbset{colframe=title,colback=title,arc=0mm}
+    \begin{tcolorbox}
+
+        \begin{minipage}{0.3\textwidth} % Picture Area
+            \includegraphics[width=.8\linewidth]{1670924362530.jpg} % Picture
+            \end{minipage} \hfill
+        \begin{minipage}{0.65\textwidth} % Name and Contact Info
+            \name{Ashish Kumar}{Principal Software Engineer} % Name and Profession
+            \vspace{2em}
+            \email{ashishkumar.abes@gmail.com} $\cdot$
+            \phone{+91 9911270918} \par \vspace{0.5em}
+            \address{India} $\cdot$
+            \linkedin{https://www.linkedin.com/in/ashish-kumar-441aa224/}{Ashish Kumar}
+        \end{minipage}
+        
+    \end{tcolorbox}
+
+    %%% Sections %%%
+    \vspace*{-1em}
+    \tcbset{colframe=white,colback=white,arc=0mm, height=0.8\textheight}
+    \begin{tcolorbox}
+        \vspace*{-0.5em}
+        \begin{minipage}[t]{0.3\textwidth} % Side Panel (Skills, Links, etc.)
+            \begin{tcolorbox}[height=0.8\textheight, grow to left by=0.6cm, colback=backdrop, colframe=backdrop, arc=0mm]
+
+                \subsection*{Skills}
+                    \skill{.Net Core}{0, 1, 2, 3, 4}
+                    \skill{C Sharp}{0, 1, 2, 3, 4}
+                    \skill{Docker}{0, 1, 2, 3,4}
+                    \skill{Kubernetes}{0, 1, 2, 3}
+                    \skill{Azure}{0, 1, 2, 3,4}
+                    \skill{Helm}{0, 1, 2, 3}
+                    \skill{ArgoCD}{0, 1, 2, 3}
+                    \skill{Angular}{0, 1, 2, 3,4}
+                    \skill{JavaScript}{0, 1, 2, 3}
+                    \skill{GCP}{0, 1, 2, 3}
+                    \skill{Database}{0, 1, 2, 3,4}
+                    \skill{React}{0, 1, 2}
+                    \skill{Azure Pipelines}{0, 1, 2}
+                    \skill{PySpark}{0, 1, 2}
+
+            \end{tcolorbox}
+        \end{minipage}
+        \begin{minipage}[t]{0.7\textwidth} % Main Panel (Education, Work Experience)
+            \begin{tcolorbox}[grow to right by=0.75cm, height=0.8\textheight, colframe=white, colback=white]
+
+                % Profile Section
+                \section*{Profile}
+                    Experienced IT professional with over 13 years of expertise in designing and delivering scalable, secure, and data-driven microservices. Skilled in team leadership, architectural design, and collaborating with stakeholders to ensure successful project execution.
+
+
+                % Work Experience
+               \section*{Work Experience}
+                 \textbf{Simcorp} \hfill \highlight{Dec 2023 - Present} \\
+                \textit{Principal Software Engineer}  
+                \vspace{0.5em}
+                \begin{itemize}
+                    \item Leading a team of seven engineers in the design and development of data-intensive microservices.
+                    \item Architecting scalable, secure, and cost-efficient solutions using .Net Core, gRPC, Azure, Docker, Kubernetes, Helm, and GitOps.
+                    \item Developing systems capable of processing large-scale data efficiently.
+                    \item Implementing Test-Driven Development (TDD) and CI/CD practices to ensure continuous integration and reliable deployments.
+                    \item Engaging with stakeholders to gather requirements and align deliverables with business goals.
+                \end{itemize}
+
+                \vspace{1 em}
+                \textbf{Dunnhumby} \hfill \highlight{Dec 2017 - Dec 2023} \\
+                \textit{Lead Engineer}  
+                \begin{itemize}
+                     \item Led a cross-functional team of five engineers across Europe and India, ensuring effective collaboration and knowledge sharing.
+                    \item Designed and implemented the Retail Media Portal, a customer-centric platform for retail media.
+                    \item Developed the Personalization Offer platform, an advanced campaign management tool with optimized workflows.
+                    \item Leveraged .Net Core, PySpark, React, Angular, and GCP to deliver scalable and high-performance solutions.
+                    \item Managed stakeholder relationships and ensured successful project execution.
+                \end{itemize}
+            \end{tcolorbox}
+        \end{minipage}
+    \end{tcolorbox}
+    
+
+    %%% Title %%%
+    \tcbset{colframe=title,colback=title,arc=0mm}
+
+    %%% Sections %%%
+    \vspace*{-1em}
+    \tcbset{colframe=white,colback=white,arc=0mm, height=0.8\textheight}
+    \begin{tcolorbox}
+        \vspace*{-0.5em}
+        \begin{minipage}[t]{0.3\textwidth} % Side Panel (Skills, Links, etc.)
+            \begin{tcolorbox}[height=0.8\textheight, grow to left by=0.6cm, colback=backdrop, colframe=backdrop, arc=0mm]
+
+                \subsection*{Languages}
+                    \lan{English}{0, 1, 2, 3,4}
+                    \lan{Hindi}{0, 1, 2, 3,4}
+
+                 \subsection*{Certifications}
+                    {MCP - .NET Framework 4, Web Applications} \par
+                    {Microsoft} {MC ID: 9366194}
+            \end{tcolorbox}
+        \end{minipage}
+        \begin{minipage}[t]{0.7\textwidth} % Main Panel (Education, Work Experience)
+            \begin{tcolorbox}[grow to right by=0.75cm, height=0.8\textheight, colframe=white, colback=white]
+
+                % Profile Section
+
+                % Work Experience
+
+                \textbf{Excelsoft Technologies} \hfill \highlight{Aug 2014 - Dec 2017} \\
+                \textit{Senior Software Engineer}  
+                \begin{itemize}
+                    \item Developed and enhanced the **IPlan** platform, a Learning Management System for assisting students.
+                    \item Gathered and finalized project requirements through client interactions.
+                    \item Designed scalable architecture and implemented critical features using .NET and Angular.
+                    \item Ensured seamless integration with third-party systems for improved platform capabilities.
+                \end{itemize}
+
+                \vspace{1 em}
+                \textbf{Mindfire Solutions} \hfill \highlight{Feb 2011 - Aug 2014} \\
+                \textit{Engineer / Senior Software Engineer}  
+                \begin{itemize}
+                    \item Developed web-based applications using ASP.NET, MVC 4, Web API, and Azure.
+                    \item Managed team members and ensured timely deliverables for client projects.
+                    \item Designed and developed APIs for real-time game interactions and user management.
+                    \item Collaborated closely with clients to understand requirements and deliver tailored solutions.
+                \end{itemize}
+
+                % Education
+                \section*{Education}
+
+                \noindent
+                \textbf{Uttar Pradesh Technical University} \\
+                \textit{MCA - Master of Computer Applications} \hfill
+                \highlight{2008 - 2011} \\
+
+                          
+                \vspace{.5em}
+                
+                \noindent
+                \textbf{Delhi University} \\
+                \textit{B.Sc. (H) Physics} \hfill
+                \highlight{2005 - 2008} \\
+
+            \end{tcolorbox}
+        \end{minipage}
+    \end{tcolorbox}
+    
+\end{document}
